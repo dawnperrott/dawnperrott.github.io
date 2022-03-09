@@ -1,0 +1,32 @@
+body{
+	 background-color: pink;
+	 text-align: centre;
+	 colour: white;
+}
+h1{
+	background-color: whitesmoke;
+	text-align: center;
+	font-size: 100px;
+}
+
+h3{
+	font-family: monospace;
+}
+.show{
+	background-color: peachpuff;
+	color:black ;
+	justify-content: space-around;
+}
+.row{
+	font-family: monospace;
+	margin-top: 100px;
+	min-height: 100px;
+	justify-content: space-between;
+}
+.card{
+	text-align: center;
+	font-family: monospace;
+}
+.headshot{
+	justify-content: space-around;
+}
