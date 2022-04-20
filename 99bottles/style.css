@@ -1,0 +1,10 @@
+body{
+
+	background: palegoldenrod;
+	text-align: center;
+	font-family: monospace;
+}
+p{
+	font-size: 45px;
+	font-family: "Lucida Console" monospace;
+}
