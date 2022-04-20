@@ -1,12 +1,200 @@
 <!DOCTYPE html>
-<html>
-<head>	
-	<title>BYOB</title>
-	<link rel="stylesheet" href="style.css"/>
-</head>
-<body id="main">
-	<p>Click the button to get the lyrics for the song 99 Bottles</p>
-	<button onclick="playSong()">Try it</button>
-	<script src="script.js"></script>
-</body>
+<html lang="en">
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--head-->
+  <head>
+    <title> ConArt Gallery! </title>
+<!--linking bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--linking css stylesheet-->
+    <link rel="stylesheet" href="style/style.css"/>  
+  </head>
+
+<!--Navagation bar at the top of the page code taken from bootstrap-->
+  <body>
+  <nav  id="one" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div  id="logo" class="navbar-brand" href="#">
+    <img src="images/logo/c.png" width="250" height="75"  alt="Conart the gallerys name in bold pink typeface">
+  </div>
+  <div class="container-fluid">
+    <a id="title" class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<!--navigation links: Gallery,Artists,Artworks,History-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item" class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#intro">History</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#artwork">Artworks</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page"href="#contact">Contact</a>
+      </li>
+      <!--Navagation bar dropdown menu of mueseums-->
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Gallerys
+      </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#pic">Spain</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#pic2">France</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#pic1">Japan</a></li>
+        </ul>
+       </li>
+     </li>
+    </ul>
+    <!--Navigation bar search bar-->
+    <form class="d-flex">
+      <input class="form-control" type="search" placeholder="Search...." aria-label="Search">
+      <button class="btn btn-dark" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <!--adding in a pink box-->
+    <div id="blockpink">
+      <p></p>
+    </div>
+    <!--Gallery Image-->
+    <div>
+      <img src="gallery/Markowicz.jpg" width="100%" alt="a red sculpture in the art gallery surrounded by paintings and prints">
+    </div>
+    <!--Conart title-->
+    <div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      <h1 id="intro"> The Conart Gallery </h1>
+    </div>
+    <!--Picaso Quote-->
+    <div><br/>
+    <blockquote class="blockquote text-center">
+      <p class="mb-0">"The purpose of art is washing the dust of daily life off our souls."</p>&nbsp;
+      <footer class="blockquote-footer">French Artist <cite title="Source Title">Pablo Picasso</cite></footer>
+    </blockquote>
+    </div>
+    <!--Intro paragraph-->
+    <div>&nbsp;
+          <p class="lead mb-0">ConArt Gallery is one of the leading contemporary galleries in Ireland. The Gallery was founded on the 20th of May 1950 by a diverse collective of graduates from the Limerick School of Art and design and has grown from strength to strength since opening. The Gallery houses an impressive permanent collection of Irish artist masterpieces dating from the 18th to 20th century. The artwork comes in a range of mediums and media. The Gallery also hosts contemporary exhibitions with Irish and international artists throughout the calendar year. Our goal is to promote culture and creativity in the city. </p>&nbsp;
+          <p class="lead mb-0">In visiting the Gallery, you are encouraged to explore the exhibitions and ask questions to the team if a piece of art takes your interest. Tours can be arranged if requested via email. The ConArtist Gallery encourages enquiry and supports creativity. The Gallery is open Monday to Saturday from 9:00 AM to 5:00 PM. However, if it’s the opening of an exhibition or an auction the gallery is open until 11:00 PM.</p>&nbsp;
+          <p class="lead mb-0">Membership at the ConArt Gallery offers V.I.P access to new exhibitions, promotions, opening shows, auctions, and the opportunity to attend limited seated panel talks with the artists themselves. The Membership ranges from a three-month bronze member plan to a six-month silver member plan, to a yearlong gold member plan.</p> &nbsp;
+          <p class="lead mb-0">The Gallery has a weekly newsletter with upcoming events and news, you can sign up for it on the ConArtist online website.</p>&nbsp;
+          <p class="lead mb-0">The ConArt website holds a detailed account of photographs and descriptions of artwork for sale in the gallery. If you wish to purchase a piece of art, click the “buy” button, to order online. The objective of the online e-commerce gallery is to make purchasing artwork as easy as possible for collectors.</p> &nbsp;
+          <p class="lead mb-0">The Gallery is in the epicenter of Corks bustling city, housed in the Redemptorist building on the grounds of Fr. Michael’s Park. A cafe is located on site which offers a range of tasty beverages and treats. The Gallery is fully accessible to the public, a lift and disabled toilet facilities are found inside.</p>&nbsp;
+    </div>&nbsp;
+    <!-- quote-->
+    <div id="quote">
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">
+        Art is never finished, only abandoned. There is no must in art because art is free. To my mind a picture should be something pleasant, cheerful and pretty. There are too many unpleasant things in life as it is, without creating still more of them."</p>&nbsp;
+        <footer class="blockquote-footer">Overheard <cite title="Source Title">Conart Gallery</cite></footer>
+      </blockquote>
+    </div><br/>
+     <!--adding in a pink box-->
+    <div id="blockpink">
+      <p></p>
+    </div>&nbsp;
+    <!--6 gallery Images code taken from w3 schools-->
+    <!-- The grid: six columns -->
+    <h1 id="artwork">The Artworks</h1>
+    <p class="lead mb-0">Click on the artwork below to enlarge the chosen Masterpiece...</p>&nbsp;
+    <div  class="gallery_row">
+      <div class="gallery_column">
+        <img src="gallery/juliespainting.jpg" alt="Julie Mehurtu" style="width:100%" onclick="displayGallery(this);">
+        </div>
+        <div class="gallery_column">
+        <img src="gallery/andyprint.jpg" alt="Andy Warhol" style="width:100%" onclick="displayGallery(this);">
+        </div>
+        <div class="gallery_column">
+        <img src="gallery/eg.jpg" alt="Ellen Gallagher" style="width:100%" onclick="displayGallery(this);">
+        </div>
+        <div class="gallery_column">
+        <img src="gallery/spider.jpg" alt="Louis Bourgeois" style="width:100%" onclick="displayGallery(this);">
+        </div>
+        <div class="gallery_column">
+        <img src="gallery/bk.jpg" alt="Barbara Kruger" style="width:100%" onclick="displayGallery(this);">
+        </div>
+        <div class="gallery_column">
+        <img src="gallery/te.jpg" alt="Tracy Emin" style="width:100%" onclick="displayGallery(this);">
+      </div>
+    </div>
+    <!-- The expanding image container -->
+    <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+     <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+    <!-- Image text -->
+    <div id="imgtext"></div>
+    </div><br/>&nbsp;
+    <!--adding in a pink box-->
+    <div id="blockpink">
+      <p></p>
+    </div>&nbsp;
+    <!--The art gallerys with info code taken from bootstrap-->
+    <h1 id="gallerys" >The Gallerys</h1>
+    <p class="lead mb-0">Click on the buildings below to find out more information about the gallerys...</p>&nbsp;
+    <div class="lightbox">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+          src="thumbnails/art1_thumbnail.jpeg" id="pic" class="img-thumbnail" alt=" Metal Art gallery"
+          class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" onclick="swapImage()"/>
+          <img
+          src="thumbnails/art2_thumbnail.jpeg" id="pic1" class="img-thumbnail" alt="Square Art Gallery"
+          class="w-100 shadow-1-strong rounded" onclick="swapImage1()"/>
+          </div>
+          <div class="col-lg-6">
+          <img
+          src="thumbnails/art3_thumbnail.jpeg" id="pic2" class="img-thumbnail" alt="Forest Gallery"
+          class="w-100 shadow-1-strong rounded" onclick="swapImage2()"/>
+       </div>
+      </div>
+    </div><br/>&nbsp;
+    <!--adding in a pink break-->
+    <div id="blockpink">
+      <p></p>
+    </div>&nbsp;
+    <!--contact form code taken from w3 schools-->
+    <h1 id="contact" >Contact Form</h1>
+    <div class="contact_container">
+      <form name="contactForm" onsubmit="return validateForm()" method="post">
+        <div class="form-group">
+          <label for="fname">First Name:</label><br/>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name:</label><br/>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div class="form-group">
+          <label for="lname">Phone Number:</label><br/>
+          <input type="text" id="phoneNum" name="phoneNumber" placeholder="Your phone number">
+        </div>
+        <div class="form-group">
+          <label for="emailaddress">Email address:</label>
+          <input type="text" id="emailaddress" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please, leave us a message..."></textarea>
+        </div>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+    <!--adding in a pink box-->
+    <div id="blockpink">
+      <p></p>
+    </div>&nbsp;
+      <!--footer at the end of the page-->
+      <div id="endOfPage" class="card-footer bg-transparent border-success">@2022 CONART Gallery</div>
+    </div>
+    <!-- link to javascript at the end of the page so it renders properly-->
+    <script src="script.js"></script>
+  </body>
 </html>
